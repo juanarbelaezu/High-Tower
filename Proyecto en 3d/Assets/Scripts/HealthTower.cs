@@ -8,8 +8,10 @@ public class HealthTower : MonoBehaviour
 {
 
     public Image vida;
-    [SerializeField] float vidatorre;
+    [SerializeField] static float vidatorre;
     private float maxhealthtower;
+
+    public static float Vidatorre { get => vidatorre; set => vidatorre = value; }
 
     // Start is called before the first frame update
     void Start()
@@ -31,14 +33,16 @@ public class HealthTower : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Enemy"))
+        if(collision.gameObject.CompareTag("Attack"))
         {
             vidatorre -= 5;
+            vida.fillAmount = vidatorre / maxhealthtower;
         }
 
         if(collision.gameObject.CompareTag("Tank"))
         {
             vidatorre -= 15;
+            vida.fillAmount = vidatorre / maxhealthtower;
         }
     }
 

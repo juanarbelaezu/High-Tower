@@ -20,6 +20,8 @@ public class PlayerManager : MonoBehaviour
 
     public Text numbot;
 
+    public Text time;
+
     private static float killcount;
 
     public Rigidbody rb;
@@ -27,6 +29,8 @@ public class PlayerManager : MonoBehaviour
     public static float Killcount { get => killcount; set => killcount = value; }
 
     public Transform pltp;
+
+    private float t;
 
     void Awake()
     {
@@ -37,6 +41,7 @@ public class PlayerManager : MonoBehaviour
     {
         health = maxhealth;
         killcount = 0f;
+        t = 120;
     }
 
 
@@ -45,7 +50,9 @@ public class PlayerManager : MonoBehaviour
     {
         healthbar.fillAmount = health / maxhealth;
 
-        if(Input.GetKeyDown(KeyCode.J)&& botiquin > 0)
+        time.text = "" + t;
+
+        if (Input.GetKeyDown(KeyCode.J)&& botiquin > 0)
         {
             Curar();
         }
@@ -63,13 +70,12 @@ public class PlayerManager : MonoBehaviour
         numbot.text = "" + botiquin;
         killcount = Killcount;
 
+        t -= Time.deltaTime;
 
-        //// Respawn Checkpoint
-        if(health <= 0)
+        if(t == 0f)
         {
             SceneManager.LoadScene("GameOver");
         }
-        ////////Checpoint
     }
 
     void Curar()

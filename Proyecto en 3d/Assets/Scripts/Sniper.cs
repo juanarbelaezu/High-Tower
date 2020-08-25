@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class Sniper : MonoBehaviour
 {
 
-    public float damage = 50f;
+    public float damage = 75f;
     public float range = 300f;
     public float force = 15f;
     public float firerate = 1f;
