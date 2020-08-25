@@ -12,6 +12,7 @@ TagManager:
   - CheckPoint
   - Bate
   - Tower
+  - Tank
   layers:
   - Default
   - TransparentFX
