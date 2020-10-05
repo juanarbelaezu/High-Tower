@@ -48,7 +48,7 @@ public class PlayerManager : MonoBehaviour
 
     void Update()
     {
-        healthbar.fillAmount = health / maxhealth;
+        //healthbar.fillAmount = health / maxhealth;
 
         time.text = "" + t;
 
@@ -67,7 +67,6 @@ public class PlayerManager : MonoBehaviour
             health = maxhealth;
         }
 
-        numbot.text = "" + botiquin;
         killcount = Killcount;
 
         t -= Time.deltaTime;

@@ -92,6 +92,7 @@
     <Compile Include="Assets\Scripts\EnemyShoot.cs" />
     <Compile Include="Assets\Scripts\Gun.cs" />
     <Compile Include="Assets\Scripts\HealthTower.cs" />
+    <Compile Include="Assets\Scripts\ICommand.cs" />
     <Compile Include="Assets\Scripts\Ladder.cs" />
     <Compile Include="Assets\Scripts\Linterna.cs" />
     <Compile Include="Assets\Scripts\ManagerSonido.cs" />
@@ -99,12 +100,14 @@
     <Compile Include="Assets\Scripts\Pistol.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\Retry.cs" />
+    <Compile Include="Assets\Scripts\ShootCommand.cs" />
     <Compile Include="Assets\Scripts\Shop.cs" />
     <Compile Include="Assets\Scripts\Sniper.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\SwitchWeapons.cs" />
     <Compile Include="Assets\Scripts\Target.cs" />
     <Compile Include="Assets\Scripts\Tutorial.cs" />
+    <Compile Include="Assets\Scripts\WeaponUI.cs" />
     <Compile Include="Assets\Terceros\Standard Assets\2D\Scripts\Camera2DFollow.cs" />
     <Compile Include="Assets\Terceros\Standard Assets\2D\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Terceros\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />

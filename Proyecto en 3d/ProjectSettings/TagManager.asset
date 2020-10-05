@@ -13,6 +13,8 @@ TagManager:
   - Bate
   - Tower
   - Tank
+  - Bullet
+  - Weapon
   layers:
   - Default
   - TransparentFX

@@ -23,6 +23,8 @@ public class Sniper : MonoBehaviour
 
     public AudioClip disparo1;
 
+    private ShootCommand shootcommand;
+
     // Update is called once per frame
     void Update()
     {

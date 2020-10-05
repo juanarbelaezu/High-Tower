@@ -62,33 +62,6 @@ public class Gun : MonoBehaviour
             StartCoroutine(Reload());
             return;
         }
-
-        /////// SCRIPT NO SIRVE
-        /*void Shoot()
-        {
-            flash.Play();
-            RaycastHit hit;
-            currentAmmo--;
-            if(Physics.Raycast(fpscam.transform.position, fpscam.transform.forward, out hit, range))
-            {
-                Debug.Log(hit.transform.name);
-                Target target = hit.transform.GetComponent<Target>();
-                if (target != null)
-                {
-                    target.Takedam(damage);
-                }
-
-                if(hit.rigidbody != null)
-                {
-                    hit.rigidbody.AddForce(-hit.normal * force);
-                }
-
-                GameObject imgo = Instantiate(impact, hit.point, Quaternion.LookRotation(hit.normal));
-                Destroy(imgo, 2f);
-            }
-            Ammo.rifleammo -= 1;
-        }*/
-        /////// SCRIPT NO SIRVE
         
         ammomag.text = "" + currentAmmo;
     }
@@ -98,7 +71,7 @@ public class Gun : MonoBehaviour
             flash.Play();
             RaycastHit hit;
             currentAmmo--;
-            if(Physics.Raycast(fpscam.transform.position, fpscam.transform.forward, out hit, range))
+            if (Physics.Raycast(fpscam.transform.position, fpscam.transform.forward, out hit, range))
             {
                 Debug.Log(hit.transform.name);
                 Target target = hit.transform.GetComponent<Target>();
