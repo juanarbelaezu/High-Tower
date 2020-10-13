@@ -5,15 +5,18 @@ using UnityEngine;
 public class EnemyShoot : MonoBehaviour
 {
 
-    [SerializeField] GameObject spawner;
+    //[SerializeField] GameObject spawner;
+    [SerializeField] Transform spawner;
     private Transform target;
     public GameObject proyectil;
     private float t;
+    ShootCommand comando;
 
     // Start is called before the first frame update
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Tower").GetComponent<Transform>();
+        comando = new ShootCommand(spawner, proyectil);
         t = 5f;
     }
 
@@ -24,7 +27,9 @@ public class EnemyShoot : MonoBehaviour
 
         if (t <= 0)
         {
-            Fire();
+            /*Fire();*/
+            comando.Execute();
+            t = 15f;
         }
 
         Vector3 direction = (target.position - transform.position).normalized;
@@ -32,11 +37,11 @@ public class EnemyShoot : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, lookrotation, Time.deltaTime * 5f);
     }
 
-    void Fire()
+    /*void Fire()
     {
         GameObject spawner = Instantiate(proyectil, transform.position, Quaternion.identity) as GameObject;
         spawner.GetComponent<Rigidbody>().AddForce(transform.forward * 2000);
         t = 5;
-    }
+    }*/
         
 }

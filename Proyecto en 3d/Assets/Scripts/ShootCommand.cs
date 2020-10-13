@@ -5,19 +5,17 @@ using UnityEngine;
 public class ShootCommand : ICommand
 {
     protected Transform spawnLocation;
-    protected Transform target;
     protected GameObject bullet;
 
-    public ShootCommand(Transform spawnLocation, GameObject bullet, Transform target)
+    public ShootCommand(Transform spawnLocation, GameObject bullet)
     {
         this.spawnLocation = spawnLocation;
-        this.target = target;
         this.bullet = bullet;
     }
 
     public void Execute()
     {
-        /*GameObject spawner = Instantiate(proyectil, transform.position, Quaternion.identity) as GameObject;
-        spawner.GetComponent<Rigidbody>().AddForce(transform.forward * 2000);*/
+        GameObject spawner = GameObject.Instantiate(bullet, spawnLocation.position, Quaternion.identity) as GameObject;
+        spawner.GetComponent<Rigidbody>().AddForce(spawnLocation.forward * 3000);
     }
 }
