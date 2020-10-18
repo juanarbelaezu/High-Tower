@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyController : MonoBehaviour
+public class EnemyController : MonoBehaviour, IPooledEnemy
 {
 
     [SerializeField] float lookradius = 10f;
@@ -14,20 +14,20 @@ public class EnemyController : MonoBehaviour
     public AudioClip zombie;
     
     // Start is called before the first frame update
-    void Start()
+    public void EnemyStart()
     {
         //target = PlayerManager.instance.player.transform;;
         target = GameObject.FindGameObjectWithTag("Tower").GetComponent<Transform>();
         agent = GetComponent<NavMeshAgent>();
         an = GetComponent<Animator>();
         ManagerSonido.instance.PlaySingle2(zombie);
+        agent.Warp(transform.position);
     }
 
     // Update is called once per frame
     void Update()
     {
-        float distance = Vector3.Distance(target.position, transform.position);
-
+        float distance = Vector3.Distance(target.position, transform.position);        
         agent.SetDestination(target.position);
         an.SetBool("at", false);
 

@@ -99,6 +99,10 @@
     <Compile Include="Assets\Scripts\Misiones.cs" />
     <Compile Include="Assets\Scripts\Pistol.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
+    <Compile Include="Assets\Scripts\Pool\EnemyPoolJug.cs" />
+    <Compile Include="Assets\Scripts\Pool\EnemyPoolSpawner.cs" />
+    <Compile Include="Assets\Scripts\Pool\EnemyPooler.cs" />
+    <Compile Include="Assets\Scripts\Pool\IPooledEnemy.cs" />
     <Compile Include="Assets\Scripts\Retry.cs" />
     <Compile Include="Assets\Scripts\ShootCommand.cs" />
     <Compile Include="Assets\Scripts\Shop.cs" />
