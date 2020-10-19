@@ -9,12 +9,6 @@ public class PlayerManager : MonoBehaviour
     public static PlayerManager instance;
 
     public GameObject player;
-
-    public Image healthbar;
-    private float maxhealth = 100f;
-    public static float health;
-
-    public static int botiquin = 0;
     public Image ins;
     private bool insact = false;
 
@@ -28,8 +22,6 @@ public class PlayerManager : MonoBehaviour
 
     public static float Killcount { get => killcount; set => killcount = value; }
 
-    public Transform pltp;
-
     private float t;
 
     void Awake()
@@ -39,7 +31,6 @@ public class PlayerManager : MonoBehaviour
 
     void Start()
     {
-        health = maxhealth;
         killcount = 0f;
         t = 120;
     }
@@ -50,21 +41,14 @@ public class PlayerManager : MonoBehaviour
     {
         //healthbar.fillAmount = health / maxhealth;
 
-        time.text = "" + t;
+        float minutes = Mathf.FloorToInt(t / 60);
+        float seconds = Mathf.FloorToInt(t % 60);
 
-        if (Input.GetKeyDown(KeyCode.J)&& botiquin > 0)
-        {
-            Curar();
-        }
+        time.text = minutes + ":" + seconds;
 
         if (Input.GetKeyDown(KeyCode.I))
         {
             ActivarIn();
-        }
-
-        if (health > maxhealth)
-        {
-            health = maxhealth;
         }
 
         killcount = Killcount;
@@ -75,12 +59,6 @@ public class PlayerManager : MonoBehaviour
         {
             SceneManager.LoadScene("GameOver");
         }
-    }
-
-    void Curar()
-    {
-        botiquin--;
-        health += 20;
     }
 
     void ActivarIn()

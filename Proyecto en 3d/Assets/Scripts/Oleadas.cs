@@ -61,6 +61,8 @@ public class Oleadas : MonoBehaviour
             spawns[6].SetActive(true);
             spawns[7].SetActive(true);
             spawns[8].SetActive(true);
+            spawns[9].SetActive(true);
+            spawns[10].SetActive(true);
             informe.text = "Enemigos vienen por todas direcciones";
         }
     }

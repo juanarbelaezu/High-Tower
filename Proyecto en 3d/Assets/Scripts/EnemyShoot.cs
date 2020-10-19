@@ -11,6 +11,7 @@ public class EnemyShoot : MonoBehaviour
     public GameObject proyectil;
     private float t;
     ShootCommand comando;
+    public Animator an;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +30,13 @@ public class EnemyShoot : MonoBehaviour
         {
             /*Fire();*/
             comando.Execute();
+            an.SetBool("at", true);
             t = 15f;
+        }
+
+        if(t > 0)
+        {
+            an.SetBool("at", false);
         }
 
         Vector3 direction = (target.position - transform.position).normalized;

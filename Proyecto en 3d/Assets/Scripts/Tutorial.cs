@@ -13,6 +13,10 @@ public class Tutorial : MonoBehaviour
     bool disp = false;
     bool tuto = false;
 
+    public GameObject inst;
+    public GameObject inst2;
+    public GameObject inst3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,32 +35,27 @@ public class Tutorial : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D))
         {
             d = true;
-
         }
 
         if ((w == true && d == true) && mov == false)
         {
             texto.text = "Muy bien, ahora apunta con el ratón y dispara con click izquierdo";
             mov = true;
-
         }
 
         if(Input.GetButtonDown("Fire1") && mov == true && disp==false)
         {
-            texto.text = "Excelente, ahora usa barra espaciadora para saltar";
+            texto.text = "Felicidades has completado el tutorial";
             disp = true;
-        }
-
-        if(Input.GetKeyDown(KeyCode.Space) && disp == true && tuto==false)
-        {
-            texto.text = "Bien, finalmente, usa F para encdender la linterna";
             tuto = true;
-
         }
 
-        if (tuto && Input.GetKeyDown(KeyCode.F))
+        if (tuto)
         {
-            texto.text = "Enhobrabuena, ha completado el tutorial";
+            inst.SetActive(false);
+            inst2.SetActive(false);
+            inst3.SetActive(false);
+            texto.text = "";
         }
     }
 }

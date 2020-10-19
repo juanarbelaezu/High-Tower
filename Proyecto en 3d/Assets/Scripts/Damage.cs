@@ -19,7 +19,7 @@ public class Damage : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider collider)
+    /*private void OnTriggerEnter(Collider collider)
     {
         if (collider.CompareTag("Player"))
         {
@@ -27,5 +27,5 @@ public class Damage : MonoBehaviour
             Debug.Log("Atacado");
             AudioSource.PlayClipAtPoint(sonido, this.transform.position);
         }
-    }
+    }*/
 }
