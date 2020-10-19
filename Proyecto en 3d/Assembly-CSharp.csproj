@@ -64,7 +64,6 @@
   <ItemGroup>
     <Compile Include="Assets\ChangeMusic.cs" />
     <Compile Include="Assets\Escape.cs" />
-    <Compile Include="Assets\Follow.cs" />
     <Compile Include="Assets\Low Poly FPS Pack - Free (Sample)\Components\Demo_Scene_Components\Scripts\DebrisScript.cs" />
     <Compile Include="Assets\Low Poly FPS Pack - Free (Sample)\Components\Demo_Scene_Components\Scripts\ExplosiveBarrelScript.cs" />
     <Compile Include="Assets\Low Poly FPS Pack - Free (Sample)\Components\Demo_Scene_Components\Scripts\TargetScript.cs" />
@@ -90,6 +89,7 @@
     <Compile Include="Assets\Scripts\Damage.cs" />
     <Compile Include="Assets\Scripts\EnemyController.cs" />
     <Compile Include="Assets\Scripts\EnemyShoot.cs" />
+    <Compile Include="Assets\Scripts\Fill.cs" />
     <Compile Include="Assets\Scripts\Gun.cs" />
     <Compile Include="Assets\Scripts\HealthTower.cs" />
     <Compile Include="Assets\Scripts\ICommand.cs" />
@@ -97,6 +97,7 @@
     <Compile Include="Assets\Scripts\Linterna.cs" />
     <Compile Include="Assets\Scripts\ManagerSonido.cs" />
     <Compile Include="Assets\Scripts\Misiones.cs" />
+    <Compile Include="Assets\Scripts\Oleadas.cs" />
     <Compile Include="Assets\Scripts\Pistol.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\Pool\EnemyPoolJug.cs" />

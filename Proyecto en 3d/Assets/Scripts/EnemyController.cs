@@ -37,7 +37,7 @@ public class EnemyController : MonoBehaviour, IPooledEnemy
             an.SetBool("at", false);
         }*/
 
-        if (distance <= agent.stoppingDistance)
+        if (distance <= /*agent.stoppingDistance*/ 2f)
         {
             Atacar();
             //Mirar al objetivo

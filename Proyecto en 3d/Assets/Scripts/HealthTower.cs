@@ -8,7 +8,8 @@ public class HealthTower : MonoBehaviour
 {
 
     public Image vida;
-    [SerializeField] static float vidatorre;
+    public Text vidatxt;
+    [SerializeField] public static float vidatorre;
     private float maxhealthtower;
 
     public static float Vidatorre { get => vidatorre; set => vidatorre = value; }
@@ -23,7 +24,8 @@ public class HealthTower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        vida.fillAmount = vidatorre / maxhealthtower;
+        vida.fillAmount = vidatorre / 100;
+        vidatxt.text = vidatorre.ToString();
 
         if (vidatorre <= 0)
         {
@@ -36,15 +38,34 @@ public class HealthTower : MonoBehaviour
         if(collision.gameObject.CompareTag("Attack"))
         {
             vidatorre -= 5;
-            vida.fillAmount = vidatorre / maxhealthtower;
+            vida.fillAmount = vidatorre / 100;
+            Debug.Log("Atacado");
         }
 
         if(collision.gameObject.CompareTag("Tank"))
         {
             vidatorre -= 15;
-            vida.fillAmount = vidatorre / maxhealthtower;
+            vida.fillAmount = vidatorre / 100;
+            Debug.Log("Atacado");
         }
     }
 
-    
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Attack"))
+        {
+            vidatorre -= 5;
+            vida.fillAmount = vidatorre / 100;
+            Debug.Log("Atacado");
+        }
+
+        if(other.CompareTag("Tank"))
+        {
+            vidatorre -= 15;
+            vida.fillAmount = vidatorre / 100;
+            Debug.Log("Atacado");
+        }
+    }
+
+
 }

@@ -46,7 +46,7 @@ public class EnemyPooler : MonoBehaviour
         objspawn.SetActive(true);
         objspawn.transform.position = position;
         objspawn.transform.rotation = rotation;
-        pooldictionary[tag].Enqueue(objspawn);
+        //pooldictionary[tag].Enqueue(objspawn);
 
         IPooledEnemy pooledene = objspawn.GetComponent<IPooledEnemy>();
 

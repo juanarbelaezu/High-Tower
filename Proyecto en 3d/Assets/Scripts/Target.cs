@@ -4,6 +4,7 @@
 public class Target : MonoBehaviour
 {
     public float health = 50f;
+    //public HealthTower torre;
 
     public void Takedam(float cant)
     {
@@ -29,6 +30,7 @@ public class Target : MonoBehaviour
         if(other.CompareTag("Tower"))
         {
             Die();
+            HealthTower.vidatorre -= 3;
         }
     }
 
@@ -37,6 +39,8 @@ public class Target : MonoBehaviour
         if(collision.gameObject.CompareTag("Tower"))
         {
             Die();
+            //torre.Vidatorre -= 5;
+            HealthTower.vidatorre -= 3;
         }
     }
 }

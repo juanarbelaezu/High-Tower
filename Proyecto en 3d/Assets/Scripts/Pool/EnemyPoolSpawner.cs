@@ -27,6 +27,5 @@ public class EnemyPoolSpawner : MonoBehaviour
     private void Spawnene()
     {
         enemypooler.Spawn("Ene", transform.position, Quaternion.identity);
-        Debug.Log("el pool esta mal");
     }
 }
