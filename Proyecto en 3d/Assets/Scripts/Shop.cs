@@ -33,12 +33,12 @@ public class Shop : MonoBehaviour
 
         killcount.text = "" + PlayerManager.Killcount; 
 
-        if(Input.GetKeyDown(KeyCode.Alpha8) && isactive == true)
+        if(Input.GetKeyDown(KeyCode.Alpha9) && isactive == true)
         {
             BuyHealth();
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha9) && isactive == true)
+        if (Input.GetKeyDown(KeyCode.Alpha8) && isactive == true)
         {
             BuyAmmo();
         }
@@ -60,9 +60,9 @@ public class Shop : MonoBehaviour
 
     void BuyHealth()
     {
-        if (PlayerManager.Killcount > 15f)
+        if (PlayerManager.Killcount > 10f)
         {
-            PlayerManager.Killcount -= 15f;
+            PlayerManager.Killcount -= 10f;
             HealthTower.Vidatorre += 20;
         }
         else

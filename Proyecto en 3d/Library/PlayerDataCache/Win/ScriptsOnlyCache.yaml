@@ -5,11 +5,16 @@ ScriptsOnlyBuild:
     - ChangeMusic
     - Damage
     - EnemyController
+    - EnemyPoolJug
+    - EnemyPoolSpawner
+    - EnemyPooler
     - EnemyShoot
     - Gun
     - HealthTower
     - Linterna
     - ManagerSonido
+    - Menu
+    - Oleadas
     - Pistol
     - PlayerManager
     - Retry
@@ -20,9 +25,17 @@ ScriptsOnlyBuild:
     - Target
     - Tutorial
     - UnityStandardAssets.Characters.FirstPerson.FirstPersonController
+    - VolverMenu
+    - WeaponUI
     Unity.ProBuilder.Editor.dll:
     - UnityEditor.ProBuilder.EditorToolbar
     - UnityEditor.ProBuilder.ProBuilderEditor
+    Unity.Recorder.Editor.dll:
+    - UnityEditor.Recorder.MovieRecorderEditor
+    - UnityEditor.Recorder.MovieRecorderSettings
+    - UnityEditor.Recorder.RecorderControllerSettings
+    - UnityEditor.Recorder.RecorderSettingsPrefsEditor
+    - UnityEditor.Recorder.RecorderWindow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
@@ -38,6 +51,7 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
@@ -62,9 +76,33 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11252}
+    - Class: 114
+      Script: {instanceID: 11254}
+    - Class: 114
+      Script: {instanceID: 11256}
+    - Class: 114
+      Script: {instanceID: 11262}
+    - Class: 114
+      Script: {instanceID: 13452}
+    - Class: 114
+      Script: {instanceID: 13774}
+    - Class: 114
+      Script: {instanceID: 14376}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/GameOver.unity:
     - Class: 1
@@ -86,19 +124,19 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11228}
+      Script: {instanceID: 11252}
     - Class: 114
-      Script: {instanceID: 11230}
+      Script: {instanceID: 11254}
     - Class: 114
-      Script: {instanceID: 11232}
+      Script: {instanceID: 11256}
     - Class: 114
-      Script: {instanceID: 11238}
+      Script: {instanceID: 11262}
     - Class: 114
-      Script: {instanceID: 13474}
+      Script: {instanceID: 13774}
     - Class: 114
-      Script: {instanceID: 13842}
+      Script: {instanceID: 14206}
     - Class: 114
-      Script: {instanceID: 13996}
+      Script: {instanceID: 14376}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -157,60 +195,70 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11228}
+      Script: {instanceID: 11252}
     - Class: 114
-      Script: {instanceID: 11230}
+      Script: {instanceID: 11254}
     - Class: 114
-      Script: {instanceID: 11232}
+      Script: {instanceID: 11256}
     - Class: 114
-      Script: {instanceID: 11238}
+      Script: {instanceID: 11262}
     - Class: 114
-      Script: {instanceID: 11410}
+      Script: {instanceID: 11452}
     - Class: 114
-      Script: {instanceID: 11476}
+      Script: {instanceID: 11530}
     - Class: 114
-      Script: {instanceID: 11606}
+      Script: {instanceID: 11670}
     - Class: 114
-      Script: {instanceID: 11682}
+      Script: {instanceID: 11748}
     - Class: 114
-      Script: {instanceID: 12076}
+      Script: {instanceID: 12062}
     - Class: 114
-      Script: {instanceID: 12094}
+      Script: {instanceID: 12194}
     - Class: 114
-      Script: {instanceID: 12160}
+      Script: {instanceID: 12200}
     - Class: 114
-      Script: {instanceID: 12502}
+      Script: {instanceID: 12216}
     - Class: 114
-      Script: {instanceID: 12542}
+      Script: {instanceID: 12290}
     - Class: 114
-      Script: {instanceID: 12598}
+      Script: {instanceID: 12624}
     - Class: 114
-      Script: {instanceID: 12806}
+      Script: {instanceID: 12680}
     - Class: 114
-      Script: {instanceID: 12996}
+      Script: {instanceID: 12726}
     - Class: 114
-      Script: {instanceID: 13080}
+      Script: {instanceID: 12796}
     - Class: 114
-      Script: {instanceID: 13128}
+      Script: {instanceID: 12862}
     - Class: 114
-      Script: {instanceID: 13148}
+      Script: {instanceID: 12936}
     - Class: 114
-      Script: {instanceID: 13254}
+      Script: {instanceID: 13030}
     - Class: 114
-      Script: {instanceID: 13474}
+      Script: {instanceID: 13240}
     - Class: 114
-      Script: {instanceID: 13552}
+      Script: {instanceID: 13330}
     - Class: 114
-      Script: {instanceID: 13906}
+      Script: {instanceID: 13380}
     - Class: 114
-      Script: {instanceID: 13996}
+      Script: {instanceID: 13402}
     - Class: 114
-      Script: {instanceID: 15884}
+      Script: {instanceID: 13536}
+    - Class: 114
+      Script: {instanceID: 13774}
+    - Class: 114
+      Script: {instanceID: 13866}
+    - Class: 114
+      Script: {instanceID: 14276}
+    - Class: 114
+      Script: {instanceID: 14376}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -243,6 +291,57 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 238
+      Script: {instanceID: 0}
+    Assets/Scenes/Menu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11252}
+    - Class: 114
+      Script: {instanceID: 11254}
+    - Class: 114
+      Script: {instanceID: 11256}
+    - Class: 114
+      Script: {instanceID: 11258}
+    - Class: 114
+      Script: {instanceID: 11262}
+    - Class: 114
+      Script: {instanceID: 12838}
+    - Class: 114
+      Script: {instanceID: 13774}
+    - Class: 114
+      Script: {instanceID: 14376}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -457,7 +556,7 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
-      Hash: 15d3d6e95913e6ce2a67e41123d112f2
+      Hash: fb92a88cfa1ab0ac13b3647fbd265bf1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyShoot
@@ -493,7 +592,7 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: b50a5b8ca221a76a6b8323cacaf05907
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Tutorial
@@ -559,12 +658,6 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
-      Hash: 1d7556126a027464aee9f5c36502a66f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Ladder
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -601,6 +694,12 @@ ScriptsOnlyBuild:
     className: WaypointProgressTracker
   - hash:
       serializedVersion: 2
+      Hash: 87d4b8b22bd197551628d78ccff4ad12
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyPoolJug
+  - hash:
+      serializedVersion: 2
       Hash: 32f6d1d5a09e5c94c633a32edd3e6836
     assemblyName: Unity.ProBuilder.dll
     namespaceName: UnityEngine.ProBuilder
@@ -629,6 +728,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Damage
+  - hash:
+      serializedVersion: 2
+      Hash: 7be124b2f536df623178301cb804c2bc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Oleadas
   - hash:
       serializedVersion: 2
       Hash: 5627243d5c291bb3cb7425c2303d3cf9
@@ -775,6 +880,12 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
+      Hash: 6a1c80ac1234d1b3f0fa8d40010fb7c5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyPooler
+  - hash:
+      serializedVersion: 2
       Hash: c88c4199b288356ec3eb2f0d85abc619
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityStandardAssets.CrossPlatformInput
@@ -809,12 +920,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityStandardAssets.Characters.ThirdPerson
     className: ThirdPersonUserControl
-  - hash:
-      serializedVersion: 2
-      Hash: b05d33d326b1353f779c3b5607ec132b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Follow
   - hash:
       serializedVersion: 2
       Hash: a4d879eed97e8d86fd752672fc026fa2
@@ -901,6 +1006,12 @@ ScriptsOnlyBuild:
     className: MobileControlRig
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Menu
+  - hash:
+      serializedVersion: 2
       Hash: 5a53671008ad6f68b0d110f7c70d732d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -925,6 +1036,12 @@ ScriptsOnlyBuild:
     className: IgnoreSnap
   - hash:
       serializedVersion: 2
+      Hash: 87d4b8b22bd197551628d78ccff4ad12
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyPoolSpawner
+  - hash:
+      serializedVersion: 2
       Hash: 9df954eca51e9f2b95915ae2918e4258
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityStandardAssets.Effects
@@ -947,6 +1064,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 92d8d550aacf9c8e93d0f6efd4eb77dd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WeaponUI
   - hash:
       serializedVersion: 2
       Hash: 21ee95b4add1eb6d3d25a1efaa2d13d9
@@ -989,6 +1112,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Pistol
+  - hash:
+      serializedVersion: 2
+      Hash: 49101319b21043357cb80c5aba043e1d
+    assemblyName: Unity.Recorder.dll
+    namespaceName: UnityEngine.Recorder
+    className: RecorderBindings
   - hash:
       serializedVersion: 2
       Hash: 8216ca00094987954bcf22fd5ccf9bfd
@@ -1051,7 +1180,7 @@ ScriptsOnlyBuild:
     className: WaypointCircuit
   - hash:
       serializedVersion: 2
-      Hash: dfe64b8772750dcba6fdd10eb712b511
+      Hash: f365bc68f4dbdb8b5e642209deacfaca
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerManager
@@ -1135,7 +1264,7 @@ ScriptsOnlyBuild:
     className: HandHeldCam
   - hash:
       serializedVersion: 2
-      Hash: 8a6784369661993ebe5c1c715dfbe99d
+      Hash: b9ebcb9b3b9cb6cbdb9cf503ab66c907
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: HealthTower
@@ -1165,6 +1294,12 @@ ScriptsOnlyBuild:
     className: AlphaButtonClickMask
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VolverMenu
+  - hash:
+      serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1175,12 +1310,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.ProBuilder.dll
     namespaceName: UnityEngine.ProBuilder
     className: Entity
-  - hash:
-      serializedVersion: 2
-      Hash: b2d434ab1bd69933cb27335306155034
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Misiones
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1483,7 +1612,8 @@ ScriptsOnlyBuild:
     className: AutoMobileShaderSwitch
   platform: 5
   scenePathNames:
+  - Assets/Scenes/Menu.unity
   - Assets/Scenes/Main.unity
-  - Assets/Scenes/GameOver.unity
   - Assets/Scenes/Escape.unity
+  - Assets/Scenes/GameOver.unity
   playerPath: C:/Users/ASUS Q551/Desktop/High-Tower/Build/Proyecto en 3d.exe

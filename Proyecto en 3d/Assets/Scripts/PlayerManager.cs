@@ -55,7 +55,7 @@ public class PlayerManager : MonoBehaviour
 
         t -= Time.deltaTime;
 
-        if(t == 0f)
+        if(t <= 0f)
         {
             SceneManager.LoadScene("GameOver");
         }

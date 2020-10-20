@@ -89,13 +89,12 @@
     <Compile Include="Assets\Scripts\Damage.cs" />
     <Compile Include="Assets\Scripts\EnemyController.cs" />
     <Compile Include="Assets\Scripts\EnemyShoot.cs" />
-    <Compile Include="Assets\Scripts\Fill.cs" />
     <Compile Include="Assets\Scripts\Gun.cs" />
     <Compile Include="Assets\Scripts\HealthTower.cs" />
     <Compile Include="Assets\Scripts\ICommand.cs" />
-    <Compile Include="Assets\Scripts\Ladder.cs" />
     <Compile Include="Assets\Scripts\Linterna.cs" />
     <Compile Include="Assets\Scripts\ManagerSonido.cs" />
+    <Compile Include="Assets\Scripts\Menu.cs" />
     <Compile Include="Assets\Scripts\Oleadas.cs" />
     <Compile Include="Assets\Scripts\Pistol.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
@@ -111,6 +110,7 @@
     <Compile Include="Assets\Scripts\SwitchWeapons.cs" />
     <Compile Include="Assets\Scripts\Target.cs" />
     <Compile Include="Assets\Scripts\Tutorial.cs" />
+    <Compile Include="Assets\Scripts\VolverMenu.cs" />
     <Compile Include="Assets\Scripts\WeaponUI.cs" />
     <Compile Include="Assets\Terceros\Standard Assets\2D\Scripts\Camera2DFollow.cs" />
     <Compile Include="Assets\Terceros\Standard Assets\2D\Scripts\CameraFollow.cs" />
@@ -802,8 +802,14 @@
     <Reference Include="Unity.ProGrids.Editor">
       <HintPath>C:/Users/ASUS Q551/Desktop/High-Tower/Proyecto en 3d/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Recorder.Editor">
+      <HintPath>C:/Users/ASUS Q551/Desktop/High-Tower/Proyecto en 3d/Library/ScriptAssemblies/Unity.Recorder.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/ASUS Q551/Desktop/High-Tower/Proyecto en 3d/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder">
+      <HintPath>C:/Users/ASUS Q551/Desktop/High-Tower/Proyecto en 3d/Library/ScriptAssemblies/Unity.Recorder.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Users/ASUS Q551/Desktop/High-Tower/Proyecto en 3d/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
@@ -817,6 +823,12 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>C:/Users/ASUS Q551/Desktop/High-Tower/Proyecto en 3d/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Recorder.Base">
+      <HintPath>C:/Users/ASUS Q551/Desktop/High-Tower/Proyecto en 3d/Library/ScriptAssemblies/Unity.Recorder.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>C:/Users/ASUS Q551/Desktop/High-Tower/Proyecto en 3d/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
       <HintPath>C:/Users/ASUS Q551/Desktop/High-Tower/Proyecto en 3d/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
@@ -825,9 +837,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/ASUS Q551/Desktop/High-Tower/Proyecto en 3d/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/ASUS Q551/Desktop/High-Tower/Proyecto en 3d/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
