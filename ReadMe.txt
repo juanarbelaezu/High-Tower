@@ -29,3 +29,5 @@ Bugs Conocidos...
  - Si se cambia de arma mientras se recarga el arma principal es probable que se bugee y no se pueda disparar.
 
  - Las texturas del rifle francotirador no se extralleron correctamente.
+
+Trailer: https://youtu.be/MtXTwGrmPA0
